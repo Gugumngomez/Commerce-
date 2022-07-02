@@ -5,17 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Foodies</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+
 </head>
-<body>
-    <div>
+
+<body >
+    <div class="w-full h-full bg-no-repeat bg-cover"
+        style="background-image: url('/gray.jpeg'); background-size: 100% 100%;">
        <div>
         <nav>
             <div>
-                <h1>
-                    <a href="/">Food Store</a>
+                <h1 class="text-zinc-400 text-3xl italic font-semibold text-center">
+                    A bunch of Foodies: Student life
                 </h1>
+                <header class="text-zinc-500 text-2xl italic font-semibold text-center">
+                    <h2>Student's favourite meals</h2>
+                    <h3>Food store</h3>
+
+                </header>
             </div>
-            <ul>
+            <ul class="text-neutral-900 text-right text-5l">
                 <li>
                     <a href="#">
                         <span>HOME</span>
@@ -35,32 +44,118 @@
         </nav>
        </div> <!--end nav-->
        <main>
-        <div>
+        <div class="text-right text-lg">
             <a href="#">Log In</a>
-            <a href="#">Sign Up</a>
+            <a href="#"><br>Sign Up</a>
         </div>
-        <header>
-            <h2>Recipes</h2>
-            <h3>For your favourite meal</h3>
-        </header>
-        <div>
-            <h4>Latest Recipes</h4>
+        <div class="text-gray-900" text-l>
+            <table style="border: 1px solid black;margin-left:auto;margin-right:auto;"> 
 
-            <div>
-                <!--cards go here-->
-                <div>
-                    <img src="" alt="">
-                    <div>
-                        <span>Famous Biggy Lasagna</span>
-                        <span>Mozambique Green Salad</span>
+                <h4>Breakfast</h4>
+                <tr style="border: 1px solid black;">
+                    <td style="border: 1px solid black;">
+                        <div class="mt-8" class="card rounded-none">
+                            <!--cards go here-->
+                            <img src="img/omelette.jpeg" alt="Omelette">
+                            <h5>Omelette</h5>
+                            <p class="price">R19.99</p>
+                            <p>Our Famous Cheese Omelette</p>
+                            <p><button>Add to Cart</button></p>
+            
+                        </div>
+                    </td>
+                    <td style="border: 1px solid black;">
+                        <div class="mt-8" class="card rounded-none">
+                            <!--cards go here-->
+                            <img src="img/pancakes.jpeg" alt="pancakes">
+                            <h5>Pancakes</h5>
+                            <p class="price">R14.99</p>
+                            <p>Golden Pancakes</p>
+                            <p><button>Add to Cart</button></p>
+            
+                        </div>
+                    </td>
+                    <td>
+                        <div class="mt-8" class="card rounded-none">
+                            <!--cards go here-->
+                            <img src="img/hfruits.jpeg" alt="Fruity Granola">
+                            <h5>Fruity Granola</h5>
+                            <p class="price">R29.95</p>
+                            <p>Fruity breakfast bowl</p>
+                            <p><button>Add to Cart</button></p>
+            
+                        </div>
+                    </td>
+                </tr>
+
+            <h4>Lunch</h4>
+            <tr style="border: 1px solid black;">
+                <td style="border: 1px solid black;">
+                    <div class="mt-8" class="card rounded-none">
+                        <!--Cards go here-->
+                        <img src="img/chickensalad.jpeg" alt="Sandwhich">
+                        <h5>Sandwich</h5>
+                        <p class="price">R24.50</p>
+                        <p>Healthy Sandwich</p>
+                        <p><button>Add to Cart</button></p>
                     </div>
-                </div>
-            </div>
-
-            <h4>Old School Recipes</h4>
-            <div>
-                <!--Cards go here-->
-            </div>
+                </td>
+                <td style="border: 1px solid black;">
+                    <div class="mt-8" class="card rounded-none">
+                        <!--Cards go here-->
+                        <img src="img/noodles.jpeg" alt="noodles">
+                        <h5>noodles</h5>
+                        <p class="price">R10.00</p>
+                        <p>Ramen Spicy Noodles</p>
+                        <p><button>Add to Cart</button></p>
+                    </div>
+                </td>
+                <td>
+                    <div class="mt-8" class="card rounded-none">
+                        <!--Cards go here-->
+                        <img src="img/hotbowl.jpeg" alt="Hot bowl">
+                        <h5>Hot rice/pap bowl</h5>
+                        <p class="price">R30.00</p>
+                        <p>Out hot hot bowl</p>
+                        <p><button>Add to Cart</button></p>
+                    </div>
+                </td>
+            </tr>
+            
+            <h4>Dinner</h4>
+            <tr style="border: 1px solid black;">
+                <td>
+                    <div class="mt-8" class="card rounded-none">
+                        <!--Cards go here-->
+                        <img src="img/braai.jpeg" alt="Meaty Sunday">
+                        <h5>Soulful Meaty Sunday</h5>
+                        <p class="price">R60.00</p>
+                        <p>Our very own meet and eat meat</p>
+                        <p><button>Add to Cart</button></p>
+                    </div>
+                </td>
+                <td style="border: 1px solid black;">
+                    <div class="mt-8" class="card rounded-none">
+                        <!--Cards go here-->
+                        <img src="img/dinnerbowl.jpeg" alt="dinner">
+                        <h5>Dinner bowl</h5>
+                        <p class="price">R50.00</p>
+                        <p>Healthy Sandwich</p>
+                        <p><button>Add to Cart</button></p>
+                    </div>
+                </td>
+                <td>
+                    <div class="mt-8" class="card rounded-none">
+                        <!--Cards go here-->
+                        <img src="img/veggiesoup.jpeg" alt="soup">
+                        <h5>Veggy Hot Soup</h5>
+                        <p class="price">R39.50</p>
+                        <p>Home made vegetable cuppa soup</p>
+                        <p><button>Add to Cart</button></p>
+                    </div>
+                </td>
+            </tr>
+            </table>
            <div>
             <div>
                 Load more
@@ -69,6 +164,5 @@
         </div>
        </main>
     </div>
-
 </body>
 </html>
